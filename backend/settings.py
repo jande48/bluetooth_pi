@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure--0t5jb2(liy^8kw5w_eh49dh=!k2$l!o+g+514k8fm*n&r=oj=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["0.0.0.0"]
 
 
 # Application definition
@@ -130,5 +130,5 @@ STATIC_ROOT = (os.path.join(BASE_DIR, "backend/backend/static"),)
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CRONJOBS = [
-    ('*/5 * * * *', 'backend.utils.sync_devices'),
+    ("*/5 * * * *", "backend.utils.sync_devices"),
 ]
